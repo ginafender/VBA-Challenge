@@ -1,2 +1,6 @@
 # VBA-Challenge
 Module 2 Project
+ VBA-Challenge
+ My code uses for loops to loop through all the rows in a sheet. First it adds the new headers for the data we are going to be pulling. It then finds the last row of the sheet, which is used in several of the ranges. To pull the data that is needed, my code compares the current ticker values to the previous and next ticker. If the previous ticker has the same value as the current, the code adds the volume of that row into the total volume count. If the previous ticker has a different value than the current, the code grabs the open value, as that means it is on a new stock row. If the next ticker has a different value than the current ticker, my code grabs the closing price value for that row, calculates the year change and percent change, adds all the new values in to the new table, and clears the volume counter so it can start over at 0 for the next ticker value. 
+ To add the functionality, my code uses the Min, and Max functions to determine the greatest increase, decrease, and volume. It then uses the Match function to pull the corresponding ticker value into the new table. 
+ Lastly, my code has a for loop that makes the macro work on all the sheets simultaneously. 
